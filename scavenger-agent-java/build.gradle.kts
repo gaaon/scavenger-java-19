@@ -6,7 +6,7 @@ plugins {
     `maven-publish`
     signing
     id("com.github.johnrengelman.shadow") version "7.0.0"
-    id("io.freefair.lombok") version "6.5.1"
+    id("io.freefair.lombok") version "6.6.3"
 }
 
 java {
@@ -58,7 +58,7 @@ repositories {
 
 dependencies {
     implementation(project(":scavenger-model"))
-    implementation("net.bytebuddy:byte-buddy:1.12.6")
+    implementation("net.bytebuddy:byte-buddy:1.14.0")
     implementation("org.ow2.asm:asm:9.4")
     implementation("org.ow2.asm:asm-tree:9.4")
     implementation("com.squareup.okhttp3:okhttp:3.14.9")
